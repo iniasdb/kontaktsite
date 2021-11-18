@@ -1,0 +1,173 @@
+/*
+
+colors
+------
+navigation text: #efefef
+navigation hover: #aaa9a9
+body text: #1b1b1b
+body background: #FFFFFF
+footer background: 
+
+*/
+
+body {
+  font-family: helvetica, sans-serif;
+  font-size: 1.65rem;
+  font-weight: 100;
+  background-color: #FFFFFF;
+  color: #1b1b1b;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+
+p {
+  line-height: 3rem;
+}
+
+/* 
+landingpage
+*/
+
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/landingpage.png);
+  background-size: cover;
+  margin-bottom: 5rem;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.6;
+}
+
+header nav {
+  background-color: transparent;
+}
+
+.logo {
+  max-width: 50rem;
+  z-index: 10;
+  margin: 0 auto;
+  position: relative;
+  top: 25%;
+}
+
+.logo img {
+  width: 100%;
+}
+
+/* 
+navigation
+*/
+
+nav {
+  display: grid;
+  grid-template-columns: .1fr 1.9fr;  
+  padding: 2rem;
+  background-color: rgba(17, 16, 16, .8);
+  z-index: 10;
+  position: relative;
+  vertical-align: middle;
+}
+
+nav img {
+  grid-column: 1;
+  width: 10rem;
+}
+
+nav ul {
+  grid-column: 2;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+nav ul li {
+  display: inline-block;
+
+}
+
+nav ul li a:hover {
+  color: #aaa9a9;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #efefef;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+/* 
+footer
+*/
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  background-color: #1b1b1b;
+  margin-top: 5rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+footer h1 {
+  margin-bottom: 1rem;
+}
+
+footer>div {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+footer h1, footer p {
+  color: #efefef;
+}
+
+footer #contact {
+  grid-column: 1;
+}
+
+footer ul li a {
+  color: #efefef;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+footer #socials {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+footer #socials h1 {
+  grid-column: 1/4;
+}
+
+footer #socials i {
+  font-size: 3rem;
+}
+
+footer #copy {
+  grid-column: 1/4;
+}
+
+/* 
+home page
+*/
+
+main {
+  width: 50vw;
+  margin: 0 auto;
+}
