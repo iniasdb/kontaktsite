@@ -27,6 +27,6 @@
         </div>
     </div>
     <div id="copy">
-        <p>&copy; Chiro Kontakt Boom</p>
+        <p>&copy; <?php echo date("Y");?> - Chiro Kontakt Boom</p>
     </div>
 </footer>

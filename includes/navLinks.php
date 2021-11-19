@@ -6,5 +6,7 @@
     <li><a href="<?=$base?>nieuws">NIEUWS</a></li>
     <li><a href="<?=$base?>activiteiten">ACTIVITEITEN</a></li>
     <li><a href="<?=$base?>verhuur">VERHUUR</a></li>
+    <li><a href="<?=$base?>trooper">TROOPER</a></li>
+    <li><a href="<?=$base?>gezocht">GEZOCHT</a></li>
     <li><a href="<?=$base?>contact">CONTACT</a></li>
 </ul>

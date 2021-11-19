@@ -46,6 +46,7 @@ header {
   background-image: url(../images/landingpage.png);
   background-size: cover;
   margin-bottom: 5rem;
+  background-attachment: fixed;
 }
 
 .overlay {
@@ -102,14 +103,15 @@ nav ul {
   display: flex;
   align-items: center;
   justify-content: right;
+  /* flex-wrap: wrap; */
+  flex-shrink: 3;
 }
 
 nav ul li {
   display: inline-block;
-
 }
 
-nav ul li a:hover {
+ul li a:hover {
   color: #aaa9a9;
 }
 
@@ -197,4 +199,71 @@ main article h1 {
 
 main article #timestamp {
   font-size: 1rem;
+}
+
+/* 
+leiding page
+*/
+
+main.leiding h1 {
+  text-align: center;
+}
+
+main .choice {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5rem;
+  height: 50vh;
+}
+
+main .choice a {
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+main .choice a h1 {
+  display: none;
+  color: #efefef;
+  text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+
+main a.jongens {
+  background-image: url(../images/jongensleiding.png);
+  background-position-x: left;
+  grid-column: 1/3;
+}
+
+main .choice a.jongens.show {
+  grid-column: 1/4;
+}
+
+main .choice a.meisjes.show {
+  grid-column: 2/5;
+}
+
+main .choice a.meisjes.hide {
+  grid-column: 4/5;
+}
+
+main .choice a.jongens.hide {
+  grid-column: 1/2;
+}
+
+main .choice a.show h1 {
+  display: initial;
+}
+
+main a.meisjes {
+  background-image: url(../images/meisjesleiding.png);
+  background-position-x: right;
+  background-position-y: center;
+  grid-column: 3/5;
 }
