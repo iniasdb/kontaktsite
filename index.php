@@ -63,7 +63,7 @@ $base = "./";
         </div>
     </header>
     
-    <main>
+    <main class="home">
         <div class="welkom">
             <h1>Welkom bij Chiro Kontakt</h1>
             <p>

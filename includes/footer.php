@@ -2,7 +2,7 @@
     <div id="contact">
         <h1>Contacteer ons</h1>
         <p>Spoorweglaan 24</p>
-        <p>2850 Boom</p>
+        <p>2850 Boom</p><br>
         <p>leiding@chirokontakt.be</p>
         <p>jongensleiding@chirokontakt.be</p>
         <p>meisjesleiding@chirokontakt.be</p>

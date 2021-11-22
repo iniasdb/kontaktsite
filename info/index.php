@@ -12,8 +12,8 @@ $base = "../";
 
     <?php include($base."includes/nav.php");?>
     
-    <main>
-        
+    <main class="info">
+        <h1><?=$section?></h1>
     </main>
 
     <?php include($base."includes/footer.php")?>
