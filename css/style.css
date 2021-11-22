@@ -8,6 +8,7 @@ body text: #1b1b1b
 body background: #FFFFFF
 footer background: 
 text accent: #e00027
+link color: #474747
 
 */
 
@@ -29,8 +30,31 @@ h1 {
   margin: 3rem 0;
 }
 
-p {
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+p, ol {
   line-height: 3rem;
+}
+
+iframe {
+  margin: 2rem 10%;
+  height: 100vh;
+  width: 80%;
+}
+
+main iframe {
+  width: 100%;
+  margin: 0;
+}
+
+main a {
+  color: #474747;
 }
 
 main h1 {
@@ -322,6 +346,72 @@ main a.meisjes {
   background-position-x: right;
   background-position-y: center;
   grid-column: 3/5;
+}
+
+/* 
+trooper page
+*/
+
+main.trooper h2 {
+  font-size: 2.5rem;
+  margin: 3rem 0;
+  text-align: left;
+}
+
+main.trooper .deelnemers {
+  text-align: center;
+}
+
+main.trooper ul {
+  line-height: 3rem;
+  columns: 4;
+  margin: 2rem 0;
+}
+
+main.trooper button {
+  font-size: 1.8rem;
+  padding: 2rem;
+  background-color: transparent;
+  border: 2px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+main.trooper button:hover {
+  box-shadow: 3px 3px 3px black;
+  color: #e00027;
+}
+
+/* 
+gezocht page
+*/
+
+main.gezocht p {
+  margin-bottom: 2rem;
+}
+
+main.gezocht ul {
+  list-style: disc;
+  line-height: 3rem;
+  padding: revert;
+}
+
+/* 
+tapperskrant page
+*/
+
+main.tapperskrant h2 {
+  margin: 2rem 0;
+}
+
+main.tapperskrant h3 {
+  margin: 2rem 0;
+}
+
+main.tapperskrant ul {
+  columns: 3;
+  text-align: center;
+  line-height: 3rem;
 }
 
 /* 

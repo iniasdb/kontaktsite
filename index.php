@@ -49,7 +49,7 @@ $base = "./";
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <?php include($base."includes/head.php");?>
 </head>
