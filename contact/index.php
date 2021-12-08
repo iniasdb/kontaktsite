@@ -11,27 +11,22 @@ $base = "../";
 <body>
 
     <?php include($base."includes/nav.php");?>
-    
+
     <main class="contact">
         <h1><?=$section?></h1>
-        <h2>U kan ons contacteren op volgende mailadressen.</h2>
+        <h2>U kan ons contacteren op volgende mailadressen</h2>
         <div class="mail">
             <div id="m">
                 <h2>Meisjes</h2>
-                <p>Groepsleiding: <a href="mailto:groepsmeisjes@chirokontaktboom.be">groepsmeisjes@chirokontaktboom.be</a></p>
-                <p>leiding: <a href="mailto:meisjes@chirokontaktboom.be">meisjes@chirokontaktboom.be</a></p>
-                <p>VB: <a href="mailto:vbmeisjes@chirokontaktboom.be">vbmeisjes@chirokontaktboom.be</a></p>
+                <?php getMeisjes();?>
             </div>
             <div id="j">
                 <h2>Jongens</h2>
-                <p>Groepsleiding: <a href="mailto:groepsjongens@chirokontaktboom.be">groepsjongens@chirokontaktboom.be</a></p>
-                <p>leiding: <a href="mailto:jongens@chirokontaktboom.be">jongens@chirokontaktboom.be</a></p>
-                <p>VB: <a href="mailto:vbjongens@chirokontaktboom.be">vbjongens@chirokontaktboom.be</a></p>
+                <?php getJongens();?>
             </div>
             <div id="g">
                 <h2>Gemengd</h2>
-                <p>Groepsleiding: <a href="mailto:groepsleiding@chirokontaktboom.be">groepsleiding@chirokontaktboom.be</a></p>
-                <p>leiding: <a href="mailto:leiding@chirokontaktboom.be">leiding@chirokontaktboom.be</a></p>
+                <?php getGemengd();?>
             </div>
         </div>
         <h2>Of via onderstaande form</h2>

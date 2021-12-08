@@ -1,0 +1,785 @@
+/*
+fade in
+*/
+
+.fadeIn {
+  animation-name: fadeIn;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0%;
+    transform: scale(50%);
+  }
+
+  60% {
+    transform: scale(102%);
+  }
+
+  80% {
+    transform: scale(98%);
+  }
+
+  100% {
+    opacity: 100%;
+    transform: scale(100%);
+  }
+}
+
+/*
+fade out
+*/
+
+.fadeOut {
+  animation-name: fadeOut;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 100%;
+  }
+
+  25% {
+    opacity: 75%;
+  }
+
+  50% {
+    opacity: 50%;
+  }
+
+  75% {
+    opacity: 25%;
+  }
+
+  100% {
+    opacity: 0%;
+  }
+}
+
+/*
+slideUp*/
+
+.slideUp {
+  animation-name: slideUp;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  visibility: visible !important;
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0%;
+    transform: translateY(100%);
+  }
+
+  80% {
+    opacity: 80%;
+    transform: translateY(-20%);
+  }
+
+  100% {
+    opacity: 100%;
+    transform: translateY(0%);
+  }
+}
+
+/*
+slide down
+*/
+
+.slideDown {
+  animation-name: slideDown;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  visibility: visible !important;
+}
+
+@keyframes slideDown {
+  0% {
+    opacity: 0%;
+    transform: translateY(-100%);
+  }
+
+  80% {
+    opacity: 80%;
+    transform: translateY(20%);
+  }
+
+  100% {
+    opacity: 100%;
+    transform: translateY(0%);
+  }
+}
+
+/*
+slide left
+*/
+
+.slideLeft {
+  animation-name: slideLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  visibility: visible !important;
+}
+
+@keyframes slideLeft {
+  0% {
+    opacity: 0%;
+    transform: translateX(10%);
+  }
+
+  80% {
+    opacity: 80%;
+    transform: translateX(-2%);
+  }
+
+  100% {
+    opacity: 100%;
+    transform: translateX(0%);
+  }
+}
+
+/*
+slide right
+*/
+
+.slideRight {
+  animation-name: slideRight;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  visibility: visible !important;
+}
+
+@keyframes slideRight {
+  0% {
+    opacity: 0%;
+    transform: translateX(-10%);
+  }
+
+  80% {
+    opacity: 80%;
+    transform: translateX(2%);
+  }
+
+  100% {
+    opacity: 100%;
+    transform: translateX(0%);
+  }
+}
+
+/*
+slide ne
+*/
+
+.slideNE {
+  animation-name: slideNE;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  visibility: visible !important;
+}
+
+@keyframes slideNE {
+  0% {
+    opacity: 0%;
+    transform: translate(-50%, 50%);
+  }
+
+  80% {
+    opacity: 80%;
+    transform: translate(10%, -10%);
+  }
+
+  100% {
+    opacity: 100%;
+    transform: translate(0%);
+  }
+}
+
+/*
+slide SE
+*/
+
+.slideSE {
+  animation-name: slideSE;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  visibility: visible !important;
+}
+
+@keyframes slideSE {
+  0% {
+    opacity: 0%;
+    transform: translate(-50%, -50%);
+  }
+
+  80% {
+    opacity: 80%;
+    transform: translate(10%, 10%);
+  }
+
+  100% {
+    opacity: 100%;
+    transform: translate(0%);
+  }
+}
+
+/*
+slide SW
+*/
+
+.slideSW {
+  animation-name: slideSW;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  visibility: visible !important;
+}
+
+@keyframes slideSW {
+  0% {
+    opacity: 0%;
+    transform: translate(50%, -50%);
+  }
+
+  80% {
+    opacity: 80%;
+    transform: translate(-10%, 10%);
+  }
+
+  100% {
+    opacity: 100%;
+    transform: translate(0%);
+  }
+}
+
+/*
+slide NW
+*/
+
+.slideNW {
+  animation-name: slideNW;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  visibility: visible !important;
+}
+
+@keyframes slideNW {
+  0% {
+    opacity: 0%;
+    transform: translate(50%, 50%);
+  }
+
+  80% {
+    opacity: 80%;
+    transform: translate(-10%, -10%);
+  }
+
+  100% {
+    opacity: 100%;
+    transform: translate(0%);
+  }
+}
+
+/*
+bounce
+*/
+
+.bounce {
+  animation-name: bounce;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0%);
+  }
+
+  60% {
+    transform: translateY(-50%);
+  }
+
+  70% {
+    transform: translateY(0%);
+    transform: scaleY(90%);
+  }
+
+  80% {
+    transform: scaleY(105%);
+  }
+
+  90% {
+    transform: scaleY(95%);
+  }
+
+  100% {
+    transform: scaleY(100%);
+  }
+}
+
+/*
+breathe
+*/
+
+.breathe {
+  animation-name: breathe;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes breathe {
+  0% {
+    transform: scale(90%);
+  }
+
+  50% {
+    transform: scale(100%);
+    opacity: 80%;
+  }
+
+  100% {
+    transform: scale(90%);
+  }
+}
+
+/*
+floating
+*/
+
+.floating {
+  animation-name: floating;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(8%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/*
+tossing
+*/
+
+.tossing {
+  animation-name: tossing;
+  animation-duration: 2.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes tossing {
+  0% {
+    transform: rotate(5deg);
+  }
+
+  50% {
+    transform: rotate(-5deg);
+  }
+
+  100% {
+    transform: rotate(5deg);
+  }
+}
+
+/*
+pull up
+*/
+
+.pullUp {
+  animation-name: pullUp;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  transform-origin: 100% 100%;
+}
+
+@keyframes pullUp {
+  0% {
+    transform: scaleY(10%);
+  }
+
+  40% {
+    transform: scaleY(105%);
+  }
+
+  60% {
+    transform: scaleY(98%);
+  }
+
+  80% {
+    transform: scaleY(102%);
+  }
+
+  100% {
+    transform: scaleY(100%);
+  }
+}
+
+/*
+pull down
+*/
+
+.pullDown {
+  animation-name: pullDown;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  transform-origin: 100% 0%;
+}
+
+@keyframes pullDown {
+  0% {
+    transform: scaleY(10%);
+  }
+
+  40% {
+    transform: scaleY(105%);
+  }
+
+  60% {
+    transform: scaleY(98%);
+  }
+
+  80% {
+    transform: scaleY(102%);
+  }
+
+  100% {
+    transform: scaleY(100%);
+  }
+}
+
+/*
+stretch left
+*/
+
+.stretchLeft {
+  animation-name: stretchLeft;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  transform-origin: 100% 0%;
+}
+
+@keyframes stretchLeft {
+  0% {
+    transform: scaleX(10%);
+  }
+
+  40% {
+    transform: scaleX(105%);
+  }
+
+  60% {
+    transform: scaleX(98%);
+  }
+
+  80% {
+    transform: scaleX(102%);
+  }
+
+  100% {
+    transform: scaleX(100%);
+  }
+}
+
+/*
+stretch right
+*/
+
+.stretchRight {
+  animation-name: stretchRight;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  transform-origin: 0% 0%;
+}
+
+@keyframes stretchRight {
+  0% {
+    transform: scaleX(10%);
+  }
+
+  40% {
+    transform: scaleX(105%);
+  }
+
+  60% {
+    transform: scaleX(98%);
+  }
+
+  80% {
+    transform: scaleX(102%);
+  }
+
+  100% {
+    transform: scaleX(100%);
+  }
+}
+
+/*
+zoom in
+*/
+
+.zoomIn {
+  animation-name: zoomIn;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(50%);
+  }
+
+  80% {
+    transform: scale(110%);
+  }
+
+  100% {
+    transform: scale(100%);
+  }
+}
+
+/*
+zoom in up
+*/
+
+.zoomInUp {
+  animation-name: zoomInUp;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes zoomInUp {
+  0% {
+    transform: scale(50%);
+    transform: translateY(100%);
+  }
+
+  70% {
+    transform: translateY(-10%);
+    transform: scale(110%);
+  }
+
+  100% {
+    transform: scale(100%);
+  }
+}
+
+/*
+zoom in down
+*/
+
+.zoomInDown {
+  animation-name: zoomInDown;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes zoomInDown {
+  0% {
+    transform: scale(50%);
+    transform: translateY(-50%);
+  }
+
+  70% {
+    transform: translateY(10%);
+    transform: scale(110%);
+  }
+
+  100% {
+    transform: scale(100%);
+  }
+}
+
+/*
+zoom in left
+*/
+
+.zoomInLeft {
+  animation-name: zoomInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes zoomInLeft {
+  0% {
+    transform: scale(50%);
+    transform: translateX(50%);
+  }
+
+  70% {
+    transform: translateX(-10%);
+    transform: scale(110%);
+  }
+
+  100% {
+    transform: scale(100%);
+  }
+}
+
+/*
+zoom in right
+*/
+
+.zoomInRight {
+  animation-name: zoomInRight;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes zoomInRight {
+  0% {
+    transform: scale(50%);
+    transform: translateX(-50%);
+  }
+
+  70% {
+    transform: translateX(10%);
+    transform: scale(110%);
+  }
+
+  100% {
+    transform: scale(100%);
+  }
+}
+
+/*
+zoom out
+*/
+
+.zoomOut {
+  animation-name: zoomOut;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes zoomOut {
+  0% {
+    transform: scale(110%);
+  }
+
+  80% {
+    transform: scale(95%);
+  }
+
+  100% {
+    transform: scale(100%);
+  }
+}
+
+/*
+zoom out up
+*/
+
+.zoomOutUp {
+  animation-name: zoomOutUp;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes zoomOutUp {
+  0% {
+    transform: scale(150%);
+    transform: translateY(100%);
+  }
+
+  70% {
+    transform: translateY(-10%);
+    transform: scale(90%);
+  }
+
+  100% {
+    transform: scale(100%);
+  }
+}
+
+/*
+zoom out down
+*/
+
+.zoomOutDown {
+  animation-name: zoomOutDown;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes zoomOutDown {
+  0% {
+    transform: scale(150%);
+    transform: translateY(-50%);
+  }
+
+  70% {
+    transform: translateY(10%);
+    transform: scale(90%);
+  }
+
+  100% {
+    transform: scale(100%);
+  }
+}
+
+/*
+zoom out left
+*/
+
+.zoomOutLeft {
+  animation-name: zoomOutLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes zoomOutLeft {
+  0% {
+    transform: scale(150%);
+    transform: translateX(50%);
+  }
+
+  70% {
+    transform: translateX(-10%);
+    transform: scale(90%);
+  }
+
+  100% {
+    transform: scale(100%);
+  }
+}
+
+/*
+zoom out right
+*/
+
+.zoomOutRight {
+  animation-name: zoomOutRight;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes zoomOutRight {
+  0% {
+    transform: scale(150%);
+    transform: translateX(-50%);
+  }
+
+  70% {
+    transform: translateX(10%);
+    transform: scale(90%);
+  }
+
+  100% {
+    transform: scale(100%);
+  }
+}

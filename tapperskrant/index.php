@@ -24,13 +24,7 @@ $base = "../";
         </iframe>
         <h3>Oudere tapperskranten</h3>
         <ul>
-            <a href="./?edition=1020"><li>Oktober 2020</li>
-            <a href="./?edition=0419"><li>April 2019</li></a>
-            <a href="./?edition=0219"><li>Februari 2019</li></a>
-            <a href="./?edition=1018"><li>Oktober 2018</li>
-            <a href="./?edition=0518"><li>Mei 2018</li></a>
-            <a href="./?edition=0218"><li>Februari 2018</li></a>
-            <a href="./?edition=1017"><li>Oktober 2017</li></a>
+            <?php include($base."includes/database/getTapperskrant.php");?>
         </ul>
     </main>
 

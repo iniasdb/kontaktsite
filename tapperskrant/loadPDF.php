@@ -1,4 +1,7 @@
 <?php
+include($base."includes/database/connect.php");
+$sql = "SELECT * FROM `tapperskrant` ORDER BY tapperskrantDatum DESC LIMIT 1";
+
 
 if (isset($_GET['edition'])) {
     $monthCode = $month = $year = $code = "";
@@ -16,8 +19,17 @@ if (isset($_GET['edition'])) {
 }
 
 if (!empty($error)) {
+
+
+    $qresult = $con->query($sql);
+
+    if ($qresult->num_rows > 0) {
+        $endresult = $qresult->fetch_assoc();
+        $code = $endresult['tapperskrantCode']; 
+    }
+
     //TODO: get latest edition from database if no valid code/no code specified
-    $code = 1020;
+    //$code = 1020;
     $month = getMonthYear($code);
     $year = "20".substr($code, 2);
 }
