@@ -30,16 +30,16 @@ $base = "../";
             </div>
         </div>
         <h2>Of via onderstaande form</h2>
-        <form action="">
+        <form action="./contact.php" method="POST">
             <label for="name">Uw naam <span>*</span></label><br>
-            <input type="text" name="name" id="name"><br>
+            <input type="text" name="name" id="name" required><br>
             <label for="mail">Uw e-mailadres <span>*</span></label><br>
-            <input type="email" name="mail" id="mail"><br>
+            <input type="email" name="mail" id="mail" required><br>
             <label for="subject">Onderwerp <span>*</span></label><br>
-            <input type="text" name="subject" id="subject"><br>
+            <input type="text" name="subject" id="subject" required><br>
             <label for="message">Bericht <span>*</span></label><br>
-            <textarea name="message" id="message" cols="30" rows="10" resizable="false"></textarea><br>
-            <input type="submit" id="submit" value="verzenden">
+            <textarea name="message" id="message" cols="30" rows="10" resizable="false" required></textarea><br>
+            <input name="submit" type="submit" id="submit" value="verzenden">
         </form>
     </main>
 

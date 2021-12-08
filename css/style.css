@@ -598,6 +598,10 @@ main.contact form textarea {
   padding: .8rem;
 }
 
+main.contact form textarea {
+  resize: vertical;
+}
+
 main.contact form input#submit {
   /* background-color: #123E6B; */
   color: #e00027;

@@ -2,7 +2,7 @@
 
 include("connect.php");
 
-$sql = "SELECT * FROM `afdelingen` WHERE `actief`=1 ";
+$sql = "SELECT * FROM `afdelingen` INNER JOIN afdelingnamen ON afdelingen.afdelingNaam = afdelingnamen.afdelingId WHERE `actief`=1 ";
 
 $qresult = $con->query($sql);
 
