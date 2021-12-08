@@ -6,3 +6,4 @@
 <link rel="stylesheet" href="<?=$base?>css/style.css">
 <script src="https://kit.fontawesome.com/db218fc83d.js" crossorigin="anonymous"></script>
 <?php include($base."includes/favicon.php");?>
+<?php include($base."includes/database/getMail.php");?>

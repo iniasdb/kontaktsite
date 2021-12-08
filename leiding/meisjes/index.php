@@ -1,6 +1,6 @@
 <?php
-$section = "afdelingen";
-$base = "../";
+$section = "meisjesleiding";
+$base = "../../";
 ?>
 
 <!DOCTYPE html>
@@ -13,9 +13,9 @@ $base = "../";
 
     <?php include($base."includes/nav.php");?>
     
-    <main class="afdelingen">
+    <main class="leidingInfo">
         <h1><?=$section?></h1>
-        <?php include($base."includes/database/getAfdelingen.php");?>
+        <?php $jongens = 0; include($base."includes/database/getLeiding.php");?>
     </main>
 
     <?php include($base."includes/footer.php")?>
