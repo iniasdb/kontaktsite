@@ -34,6 +34,10 @@ document.addEventListener('DOMContentLoaded', function() {
     
   
     calendar.render();
+<<<<<<< Updated upstream
 
     console.log(calendar.getEvents());
   });
+=======
+  });
+>>>>>>> Stashed changes

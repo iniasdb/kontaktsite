@@ -3,6 +3,10 @@ session_start();
 
 $section = "register";
 $base = "../";
+
+if (isset($_SESSION['role'])) {
+    header("Location: ".$base."admin");
+}
 ?>
 
 <!DOCTYPE html>

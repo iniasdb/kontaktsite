@@ -1,7 +1,9 @@
 <?php
 session_start();
 
-include("../includes/database/connect.php");
+$base = "../";
+
+include($base."includes/database/connect.php");
 
 if (!isset($_POST['submit'])) {
     header("Location: ./");

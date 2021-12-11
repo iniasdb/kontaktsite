@@ -31,7 +31,7 @@ if ($qresult->num_rows > 0) {
         $ervaring = $endresult['leidingErvaring'] + $tijdSindsToegevoegd;
         $img = $endresult['leidingImg'];
 
-        if ($jongens === 1) $aanspreking = strtok($bijnamen, ',').$nummer;
+        if ($jongens === 1) $aanspreking = strtok($bijnamen, ',')."_".$nummer;
         else $aanspreking = strtok($naam, ' ');
         $afdeling = $endresult['afdelingNaam'];
 
@@ -52,16 +52,16 @@ if ($qresult->num_rows > 0) {
                 <img src='".$base."images/leiding/$img' alt='$aanspreking'>
             </div>
             <div class='info'>
-                <p>Naam: $naam</p>
-                <p>Bijnamen: $bijnamen</p>
-                <p>Leeftijd: $leeftijd</p>
-                <p>Studie/werk: $studie</p>
-                <p>Favoriete chiromoment: $moment</p>
-                <p>Favoriete chirolied: $lied</p>
-                <p>Lievelingseten: $eten</p>
-                <p>Lievelingsdier: $dier</p>
-                <p>Aantal jaar in de chiro: $inChiro</p>
-                <p>Aantal jaar leiding: $ervaring</p>
+                <p><span class='q'>Naam: </span>$naam</p>
+                <p><span class='q'>Bijnamen: </span>$bijnamen</p>
+                <p><span class='q'>Leeftijd: </span>$leeftijd</p>
+                <p><span class='q'>Studie/werk: </span>$studie</p>
+                <p><span class='q'>Favoriete chiromoment: </span>$moment</p>
+                <p><span class='q'>Favoriete chirolied: </span>$lied</p>
+                <p><span class='q'>Lievelingseten: </span>$eten</p>
+                <p><span class='q'>Lievelingsdier: </span>$dier</p>
+                <p><span class='q'>Aantal jaar in de chiro: </span>$inChiro</p>
+                <p><span class='q'>Aantal jaar leiding: </span>$ervaring</p>
             </div>
         </article>
         ";

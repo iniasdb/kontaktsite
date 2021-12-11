@@ -1,6 +1,12 @@
 <?php
+session_start();
+
 $section = "log in";
 $base = "../";
+
+if (isset($_SESSION['role'])) {
+    header("Location: ".$base."admin");
+}
 ?>
 
 <!DOCTYPE html>
