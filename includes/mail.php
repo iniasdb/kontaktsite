@@ -20,12 +20,6 @@ try {
     ini_set("smtp_port","587");
     $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
     $mail->IsSMTP();
-    // $mail->SMTPAuth = true;
-    // $mail->SMTPSecure = "tls";
-    // $mail->Host = "smtp.gmail.com";
-    // $mail->Port = 587;
-    // $mail->UserName = "jjansens339@gmail.com";
-    // $mail->Password = "Plopkoek1";
     $mail->SetFrom("jjansens339@gmail.com","jan");
     $mail->FromName = "From"; 
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;                                   //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
