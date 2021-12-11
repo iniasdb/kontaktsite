@@ -10,6 +10,7 @@ $base = "../";
     <link rel="stylesheet" href="<?=$base?>js/fullcalendar/main.css">
     <script src="<?=$base?>js/fullcalendar/main.js"></script>
     <script src='<?=$base?>js/fullcalendar/locales/nl.js'></script>
+    <script src="<?=$base?>config.js"></script>
     <script src="<?=$base?>js/calendar.js"></script>
 </head>
 <body>

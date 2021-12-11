@@ -1,9 +1,11 @@
 <?php
 
-$servername = "localhost";
-$username = "root";
-$password = "usbw";
-$dbname = "kontakt";
+require($base."includes/getEnv.php");
+
+$servername = getenv("DB_HOST");
+$username = getenv("DB_USERNAME");
+$password = getenv("DB_PASS");
+$dbname = getenv("DB_NAME");
 
 $con = new mysqli($servername, $username, $password, $dbname);
 $con->set_charset('utf8mb4');

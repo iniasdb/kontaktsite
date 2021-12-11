@@ -1,0 +1,166 @@
+@media (max-width: 600px) {
+    
+    /*
+    nav
+    */
+
+    nav {
+        justify-items: center;
+        grid-row-gap: 2rem;
+    }
+
+    nav a {
+        grid-column: 1/3;
+    }
+
+    nav i#navButton {
+        display: block;
+        grid-column: 1/3;
+        grid-row: 2;
+        border: 0;
+        color: #efefef;
+        font-size: 2rem;
+    }
+
+    nav ul {
+        grid-row: 3;
+        grid-column: 1/3;
+        display: none;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 1rem;
+        margin-top: 2rem;
+        justify-items: center;
+    }
+
+    nav ul li {
+        padding: .5rem;
+    }
+
+    /*
+    main
+    */
+
+    main {
+        width: 85vw;
+    }
+
+    main article h1 {
+        line-height: 3rem;
+    }
+
+    /*
+    footer
+    */
+
+    footer {
+        display: block;
+    }
+
+    footer > div {
+        margin: 2rem 0;
+    }
+
+    footer div#socials {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    footer div#socials h1 {
+        grid-column: 1/3;
+        margin-bottom: 1rem;
+    }
+
+    footer div#copy {
+        margin-top: 3.5rem;
+    }
+
+    /*
+    afdelingen page
+    */
+
+    main.afdelingen article .afdelingTitle {
+        text-align: center;
+    }
+
+    main.afdelingen article > * {
+        grid-column: 1/3;
+    }
+
+    /*
+    leiding page
+    */
+
+    main.leiding .choice {
+        grid-template-columns: 1fr;
+    }
+
+    main.leiding .choice > a {
+        grid-column: 1;
+    }
+
+    /*
+    leiding info page
+    */
+
+    main.leidingInfo article h3 {
+        text-align: center;
+    }
+
+    main.leidingInfo article > div {
+        grid-column: 1/3;
+    }
+
+    /*
+    activiteiten page
+    */
+
+    main.activiteiten #btns {
+        gap: unset;
+    }
+
+    main.activiteiten #btns a {
+        padding: 1rem;
+    }
+
+    #calendar .fc-toolbar-chunk {
+        text-align: center;
+    }
+
+    /*
+    verhuur page
+    */
+
+    main.verhuur .container {
+        display: block;
+    }
+
+    main.verhuur .container article {
+        margin: 2rem 0;
+    }
+
+    /*
+    tapperskrant
+    */
+
+    main.tapperskrant ul {
+        columns: 2;
+    }
+
+    /*
+    contact page
+    */
+
+    main.contact .mail {
+        display: block;
+    }
+
+    main.contact .mail div {
+        margin: 2rem 0;
+        padding-left: 1rem;
+    }
+
+    main.contact .mail div h2 {
+        text-align: center;
+        padding: 1.5rem;
+    }
+}
