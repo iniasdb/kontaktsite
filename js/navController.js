@@ -5,8 +5,13 @@ function openNav() {
     let button = document.querySelector("#navButton");
 
     try {
-        let logo = document.querySelector(".logo");
-        logo.style.top = "25%";
+        if (window.innerWidth >= 1000) {
+            let logo = document.querySelector(".logo");
+            logo.style.top = "0";    
+        } else {
+            let logo = document.querySelector(".logo");
+            logo.style.display = "none";    
+        }
     } catch (err) {
     }
     
@@ -22,8 +27,13 @@ function closeNav() {
     let button = document.querySelector("#navButton");
 
     try {
-        let logo = document.querySelector(".logo");
-        logo.style.top = "25%";
+        if (window.innerWidth >= 1000) {
+            let logo = document.querySelector(".logo");
+            logo.style.top = "25%";    
+        } else {
+            let logo = document.querySelector(".logo");
+            logo.style.display = "block";    
+        }
     } catch (err) {
 
     }

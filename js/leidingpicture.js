@@ -1,5 +1,5 @@
 function show(imgId, img2Id) {
-    if (window.innerWidth > 600) {
+    if (window.innerWidth > 800) {
         let img = document.querySelector("#" + imgId);
         let img2 = document.querySelector("#" + img2Id);
         img.classList.add("show");
@@ -8,7 +8,7 @@ function show(imgId, img2Id) {
 }
 
 function hide(imgId, img2Id) {
-    if (window.innerWidth > 600) {
+    if (window.innerWidth > 800) {
         let img = document.querySelector("#" + imgId);
         let img2 = document.querySelector("#" + img2Id);
     
