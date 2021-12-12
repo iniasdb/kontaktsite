@@ -19,9 +19,21 @@ $base = "../";
         <h1><?=$section?></h1>
         <h2>Hier vindt u elke 3 maand de nieuwste tapperskrant terug!</h2>
         <h3>De tapperskrant van <?=$month." ".$year?></h3>
-        <iframe src="<?=$base?>tapperskrantArtikels/<?=$code?>.pdf" frameborder="0">
-            Helaas, uw browser ondersteunt geen iframes.
-        </iframe>
+
+        <?php
+        $user_agent = $_SERVER['HTTP_USER_AGENT'];
+
+        if (stripos( $user_agent, 'Safari') !== false) {
+            echo "<div class='pdfContainer'><a id='pdfDownload' href='".$base."tapperskrantArtikels/$code.pdf' download><i class='far fa-file-pdf'></i></a></div>";
+        } else {
+            echo "
+            <iframe src='".$base."tapperskrantArtikels/$code.pdf' frameborder='0'>
+                Helaas, uw browser ondersteunt geen iframes.
+            </iframe>
+            ";
+        }
+        ?>
+
         <h3>Oudere tapperskranten</h3>
         <ul>
             <?php include($base."includes/database/getTapperskrant.php");?>

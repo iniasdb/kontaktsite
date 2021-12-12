@@ -19,9 +19,11 @@ if ($qresult->num_rows > 0) {
         echo "
             <article class='item'>
                 <img src='".$base."images/verhuur/$img' alt='$titel'>
-                <h1>$titel</h1>
-                <p>€$prijs huur</p>
-                <p>€$waarborg waarborg</p>
+                <div class='infoContainer'>
+                    <h1>$titel</h1>
+                    <p>€$prijs huur</p>
+                    <p>€$waarborg waarborg</p>
+                </div>
             </article>";
     }
 }
