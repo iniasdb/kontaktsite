@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var calendarEl = document.getElementById('calendar');
   
     var calendar = new FullCalendar.Calendar(calendarEl, {
-      googleCalendarApiKey: 'AIzaSyAPzHNB8iAzQ2joFH7zoLnSO20WpjjxsDE',
+      googleCalendarApiKey: '',
       initialView: 'dayGridMonth',
       initialDate: '2021-11-07',
       locale: 'nl',

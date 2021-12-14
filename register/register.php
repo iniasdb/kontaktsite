@@ -11,7 +11,6 @@ require($base.'includes/PHPMailer-6.5.3/src/Exception.php');
 require($base.'includes/PHPMailer-6.5.3/src/PHPMailer.php');
 require($base.'includes/PHPMailer-6.5.3/src/SMTP.php');
 
-
 if (!isset($_POST['submit'])) {
     header("Location: ./");
 }
