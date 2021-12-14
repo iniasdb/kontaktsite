@@ -44,6 +44,7 @@
 
 
 <?php
+session_start();
 $section = "home";
 $base = "./";
 ?>

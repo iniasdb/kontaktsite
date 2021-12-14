@@ -106,6 +106,7 @@ header {
   height: 100vh;
   background-image: url(../images/landingpage.png);
   background-size: cover;
+  background-position: center;
   margin-bottom: 5rem;
   background-attachment: fixed;
 }
@@ -115,12 +116,16 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: black;
   opacity: 0.6;
 }
 
 header nav {
+  background-color: transparent;
+}
+
+header .profileNav {
   background-color: transparent;
 }
 
@@ -136,6 +141,33 @@ header nav {
   width: 100%;
 }
 
+/*
+profile navigation
+*/
+
+.profileNav {
+  background-color: rgba(17, 16, 16, .8);
+
+}
+
+.profileNav ul {
+  direction: rtl;
+  margin-right: 2rem;
+}
+
+.profileNav ul li {
+  display: inline-flex;
+  z-index: 2;
+  position: relative;
+  cursor: pointer;
+}
+
+.profileNav ul li a {
+  text-decoration: none;
+  padding: 1rem;
+  color: #efefef;
+}
+
 /* 
 navigation
 */
@@ -144,6 +176,7 @@ nav {
   display: grid;
   grid-template-columns: .1fr 1.9fr;  
   padding: 2rem;
+  padding-top: 0;
   background-color: rgba(17, 16, 16, .8);
   z-index: 10;
   position: relative;
@@ -157,6 +190,10 @@ nav img {
 
 nav img:hover {
   transform: rotate(10deg);
+}
+
+nav i#navButton {
+  display: none;
 }
 
 nav ul {
@@ -261,6 +298,11 @@ main article {
   padding: 3rem;
   margin: 2rem 0;
 }
+
+main article a {
+  word-break: break-all;
+}
+
 
 main article h1 {
   font-size: 2rem;
@@ -394,6 +436,10 @@ leiding info page
   font-weight: bold;
 }
 
+.leidingInfo .q {
+  font-weight: 900;
+}
+
 .leidingInfo article {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -487,6 +533,11 @@ main.verhuur .container article {
   margin: 0;
 }
 
+main.verhuur .container article img {
+  width: 150px;
+  height: 150px;
+}
+
 main.verhuur .container article h1 {
   margin: 1rem 0;
 }
@@ -557,6 +608,14 @@ main.tapperskrant ul {
   line-height: 3rem;
 }
 
+main.tapperskrant .pdfContainer {
+  text-align: center;
+}
+
+main.tapperskrant #pdfDownload {
+  font-size: 4rem;
+}
+
 /* 
 contact page
 */
@@ -606,5 +665,36 @@ main.contact form input#submit {
   /* background-color: #123E6B; */
   color: #e00027;
   font-size: 2rem;
+}
+
+/*
+register,
+login,
+reset, 
+forgot form
+*/
+
+form.userActionForm {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  margin: 1rem 0;
+}
+
+form.userActionForm input#captcha {
+  grid-column: 2;
+}
+
+form.userActionForm input[type=submit] {
+  grid-column: 1/3;
+}
+
+form.userActionForm input, 
+form.userActionForm label {
+  padding: 1rem;
+}
+
+span.error {
+  color: red;
 }
 

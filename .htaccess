@@ -1,0 +1,5 @@
+RedirectMatch 403 ^/kontakt/includes/?$
+RedirectMatch 403 ^/kontakt/images/?$
+RedirectMatch 403 ^/kontakt/js/?$
+RedirectMatch 403 ^/kontakt/favicon/?$
+RedirectMatch 403 ^/kontakt/css/?$
