@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 $section = "nieuws";
 $base = "../";
 ?>

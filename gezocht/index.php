@@ -1,4 +1,5 @@
 <?php
+session_start();
 $section = "gezocht";
 $base = "../";
 ?>

@@ -8,5 +8,5 @@
 <link rel="stylesheet" href="<?=$base?>css/tablet.css">
 <script src="https://kit.fontawesome.com/db218fc83d.js" crossorigin="anonymous"></script>
 <script src="<?=$base?>js/navController.js"></script>
-<?php include($base."includes/favicon.php");?>
-<?php include($base."includes/database/getMail.php");?>
+<?php include($base."includes/favicon.php");
+include($base."includes/database/getMail.php");?>
