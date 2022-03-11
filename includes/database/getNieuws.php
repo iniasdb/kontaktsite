@@ -18,12 +18,18 @@ if ($qresult->num_rows > 0) {
         
         $titel = $endresult['nieuwsTitel'];     
         $bericht = $endresult['nieuwsBericht'];
+        $id = $endresult['nieuwsId'];
         $posted = date_format(date_create($endresult['datePosted']), "D, d M, Y - h:m");
 
-        echo " <article>
-                <h1>$titel</h1>
-                    <p id='timestamp'>$posted</p>
-                    <p>$bericht</p>
+        echo "<article>";
+
+        if (isset($_SESSION['role']) && $_SESSION['role'] != 1) {
+            echo "<a href='$base/includes/adminActions/editContent.php?type=nieuws&id=$id'><button>edit</button></a>";
+        }    
+
+        echo "<h1>$titel</h1>
+                <p id='timestamp'>$posted</p>
+                <p>$bericht</p>
             </article>";
     }
 }

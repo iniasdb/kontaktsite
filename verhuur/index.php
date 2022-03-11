@@ -9,6 +9,7 @@ $base = "../";
 <html lang="nl">
 <head>
     <?php include($base."includes/head.php");?>
+    <script src="<?=$base?>js/verhuurController.js"></script>
 </head>
 <body>
 
@@ -21,7 +22,8 @@ $base = "../";
         <div class="container">
             <?php include($base."includes/database/getVerhuur.php");?>
         </div>
-        <p>Indien u iets wilt huren kan u een mailtje sturen naar <?=getVerhuur();?></p>
+        <p>Indien u iets wilt huren kan u een mailtje sturen naar <?=getVerhuur();?> <!--of door de gewenste materialen aan te klikken en op de onderstaande knop te drukken--></p>
+        <!-- <button onclick="submit()">Huur</button> -->
     </main>
 
     <?php include($base."includes/footer.php")?>
