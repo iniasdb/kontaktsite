@@ -12,6 +12,8 @@ if (!isset($_GET['id'])) {
 
 $base = "../";
 
+include($base."includes/database/connect.php");
+
 $id = checkInput($_GET['id']);
 $sql = "SELECT `userId` FROM `user` WHERE `userRegCode` = '$id'";
 $qresult = $con->query($sql);

@@ -11,7 +11,6 @@ require($base.'includes/PHPMailer-6.5.3/src/Exception.php');
 require($base.'includes/PHPMailer-6.5.3/src/PHPMailer.php');
 require($base.'includes/PHPMailer-6.5.3/src/SMTP.php');
 
-
 if (!isset($_POST['submit'])) {
     header("Location: ./");
 }
@@ -90,9 +89,8 @@ if (!$errorMessage) {
     $id = generateId();
 
     $sql = "INSERT INTO `user`(`userMail`, `userFirstname`, `userLastname`, `userPassword`, `userRegCode`) VALUES ('$contactMail','$fname','$lname','$pass', '$id')";
-    $qresult = $con->query($sql);
 
-    if ($qresult->num_rows > 0) {
+    if ($con->query($sql)) {
         echo "done";
         sendMail($contactMail, $lname." ".$fname, $id);
         header("Location: ../login/");

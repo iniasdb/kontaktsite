@@ -4,9 +4,6 @@ session_start();
 $section = "Wachtwoord reset";
 $base = "../";
 
-if (!isset($_GET[$id]) || !isset($_GET['user'])) {
-    header("Location: ".$base);
-}
 ?>
 
 <!DOCTYPE html>

@@ -51,6 +51,10 @@
         padding: .5rem;
     } 
 
+    nav ul li:hover ul {
+        display: none;
+    }
+
     /*
     main
     */
@@ -98,6 +102,14 @@
 
     footer div#copy {
         margin-top: 3.5rem;
+    }
+
+    /*
+    info page
+    */
+
+    main.info .links a {
+        font-size: 1.5rem;
     }
 
     /*

@@ -1,10 +1,15 @@
 document.addEventListener('DOMContentLoaded', function() {
     var calendarEl = document.getElementById('calendar');
+    let date = new Date();
+    let dd = String(date.getDate()).padStart(2, '0');
+    let mm = String(date.getMonth() + 1).padStart(2, '0'); //January is 0!
+    let yyyy = date.getFullYear();
+    let dateString = yyyy + '-' + mm + '-' + dd;
   
     var calendar = new FullCalendar.Calendar(calendarEl, {
       googleCalendarApiKey: 'AIzaSyAPzHNB8iAzQ2joFH7zoLnSO20WpjjxsDE',
       initialView: 'dayGridMonth',
-      initialDate: '2021-11-07',
+      initialDate: dateString,
       locale: 'nl',
       height: 'auto',
       handleWindowResize: true,

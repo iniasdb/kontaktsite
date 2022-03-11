@@ -20,9 +20,15 @@ if (!isset($_SESSION['role'])) {
 
     <?php include($base."includes/nav.php");?>
     
-    <main class="afdelingen">
+    <main class="profile">
         <h1><?=$section?></h1>
-        <?php echo "hello ". $_SESSION['fname']." role: ".$_SESSION['role'] ?>
+        <?php echo "<h2>Welkom terug ". $_SESSION['fname']."</h2>"?>
+        <a href="<?=$base?>logout.php"><button>Uitloggen</button></a>
+        <button>Account aanpassen</button>
+        <button>Kind/lid toevoegen</button>
+        <button>Kinderen/leden bekijken</button>
+        <button>Inschrijven</button>
+        <button>Inschrijven kamp</button>
     </main>
 
     <?php include($base."includes/footer.php")?>
